@@ -21,6 +21,12 @@
       "dom"
     ]
   },
+  "paths": {
+    "@mention/*": ["./src/app/mention"],
+    "@activity/*": ["./src/app/activity"],
+    "@shared/*": ["./src/app/shared"],
+    "@core/*": ["./src/app/core"]
+  },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
