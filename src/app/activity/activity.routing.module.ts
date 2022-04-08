@@ -4,7 +4,7 @@ import {ActivityPageComponent} from "./pages/activity-page/activity-page.compone
 
 const routes: Routes = [
   {
-    path: 'activity', component: ActivityPageComponent,
+    path: '.', component: ActivityPageComponent,
   }
 ];
 

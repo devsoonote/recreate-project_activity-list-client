@@ -2,7 +2,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "./src",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -20,12 +20,6 @@
       "es2018",
       "dom"
     ]
-  },
-  "paths": {
-    "@mention/*": ["./src/app/mention"],
-    "@activity/*": ["./src/app/activity"],
-    "@shared/*": ["./src/app/shared"],
-    "@core/*": ["./src/app/core"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
