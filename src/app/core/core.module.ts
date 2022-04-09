@@ -1,13 +1,20 @@
 import {NgModule, Optional, SkipSelf} from '@angular/core';
-import {SharedModule} from "@shared/shared.module";
-import {ActivityModule} from "@activity/activity.module";
-import {MentionModule} from "@mention/mention.module";
+import { HeaderComponent } from './components/header/header.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { ContentsComponent } from './components/contents/contents.component';
+
 @NgModule({
-  imports: [
-    SharedModule,
-    ActivityModule,
-    MentionModule,
+  exports: [
+    HeaderComponent,
+    SidebarComponent,
+    ContentsComponent
   ],
+
+  declarations: [
+    HeaderComponent,
+    SidebarComponent,
+    ContentsComponent
+  ]
 })
 export class CoreModule {
   constructor(@Optional() @SkipSelf() core: CoreModule) {

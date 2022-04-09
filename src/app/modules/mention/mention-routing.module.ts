@@ -3,11 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 import {MentionPageComponent} from "./pages/mention-page/mention-page.component";
 
 const routes: Routes = [
-  { path: '', component: MentionPageComponent}
+  { path: 'mention', component: MentionPageComponent, pathMatch: 'full'}
 ];
 
 @NgModule({
-  imports: [],
-  exports: []
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule],
 })
 export class MentionRoutingModule {}
