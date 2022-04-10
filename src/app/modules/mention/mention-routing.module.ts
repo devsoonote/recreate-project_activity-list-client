@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import {MentionPageComponent} from "./pages/mention-page/mention-page.component";
+import { RouterModule, Routes } from '@angular/router';
+import { MentionPageComponent } from './pages/mention-page/mention-page.component';
 
 const routes: Routes = [
-  { path: 'mention', component: MentionPageComponent, pathMatch: 'full'}
+  { path: 'mention', component: MentionPageComponent, pathMatch: 'full' },
 ];
 
 @NgModule({
