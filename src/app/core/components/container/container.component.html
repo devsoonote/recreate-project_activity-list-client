@@ -1,1 +1,14 @@
-<p>container works!</p>
+<ng-container *ngIf="!isLoading; else loading">
+  <div class="main">
+    <nav class="nav">
+      <ng-content select="[sidebar]"></ng-content>
+    </nav>
+    <section class="contents">
+      <ng-content select="[contents]"></ng-content>
+    </section>
+  </div>
+</ng-container>
+
+<ng-template #loading>
+  <app-loading></app-loading>
+</ng-template>
