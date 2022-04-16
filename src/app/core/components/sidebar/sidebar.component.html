@@ -1,1 +1,31 @@
-<p>sidebar works!</p>
+<div class="sidebar">
+  <div class="sidebar__top-box">
+    <app-logo></app-logo>
+    <button type="button" class="menu-action-button">
+      <mat-icon class="menu-icon" aria-hidden="false" aria-label="menu icon"
+        >menu_open</mat-icon
+      >
+    </button>
+  </div>
+  <ul class="menu">
+    <li>
+      <a [routerLink]="'/activity'">
+        <mat-icon
+          aria-hidden="false"
+          aria-label="notifications icon"
+          class="menu-icon"
+          >notifications</mat-icon
+        >
+        <span>Activity</span>
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="'/mention'">
+        <mat-icon aria-hidden="false" a ria-label="task icon" class="menu-icon"
+          >task</mat-icon
+        >
+        <span>Mention</span>
+      </a>
+    </li>
+  </ul>
+</div>
